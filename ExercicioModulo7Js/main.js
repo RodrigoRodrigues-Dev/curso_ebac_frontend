@@ -29,5 +29,3 @@ form.addEventListener('submit', function(e) {
     };
 
 })
-
-valueB.addEventListener('keyup', function(e) {})
