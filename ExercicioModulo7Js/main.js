@@ -16,8 +16,8 @@ form.addEventListener('submit', function(e) {
 
     if(maiorOuMenor >= 0) {
         let resultado = document.querySelector('#sucess');
-        resultado.innerHTML = maiorOuMenor;
-        resultado.style.display = 'block';
+        resultado.innerHTML = `<span>Resultado: <strong>${maiorOuMenor.toLocaleString('pt-BR')}</strong> </span>`;
+        resultado.style.display = 'flex';
         valueA.value = ' '
         valueB.value = ' '
         error.style.display = 'none';

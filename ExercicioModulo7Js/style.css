@@ -93,6 +93,7 @@ form button:hover {
     padding: 10px;
     display: none;
     border-radius: 3px;
+    justify-content: center;
 }
 
 #error {
