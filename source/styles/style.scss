@@ -1,0 +1,97 @@
+@use 'reset';
+@use 'variaves';
+
+body {
+    background: variaves.$corPrincipal;
+    color: variaves.$corSegundaria;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+  
+body,
+input,
+textarea,
+button {
+    font-family: variaves.$fontePrincipal;
+}
+  
+html,
+body {
+    height: 100vh;
+}
+  
+
+.calculator {
+    animation: sideIn 480ms cubic-bezier(0.42, 0, 0.21, 1);
+    background-color: variaves.$graySegundario;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px variaves.$corSombra;
+    padding: 10px 20px;
+    width: 252px;
+    
+    .display {
+        margin: 50px 0 60px;
+        text-align: right;
+    
+        input {
+            background: transparent;
+            border: none;
+            color: variaves.$brancoPrimario;
+            font-size: 40px;
+            font-weight: 400;
+            text-align: right;
+            width: 100%;
+        }
+
+        h2 {
+            color: variaves.$purpleSegundario;
+            font-size: 15px;
+            font-weight: 500;
+            height: 18px;
+        }
+    }
+    .row {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        margin-bottom: 10px;
+    }    
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    color: variaves.$brancoPrimario;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
+    margin: 2px;
+    transition: all 0.15s ease-in-out;
+    width: 50px;
+
+    &:hover {
+        transform: scale(1.04);
+    }
+    &:active {
+        transform: scale(0.97);
+    }
+}
+  
+
+.gray {
+    background-color: variaves.$brancoSegundario;
+    color: variaves.$grayPrimario;
+}
+  
+.purple {
+    background-color: variaves.$purplePrimario;
+    color: variaves.$brancoPrimario;
+}
+  
+.purple-text {
+  color: variaves.$purplePrimario;
+}
+  
